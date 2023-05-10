@@ -14,7 +14,7 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
 
 --- a/drivers/net/ethernet/freescale/fec_main.c
 +++ b/drivers/net/ethernet/freescale/fec_main.c
-@@ -2226,7 +2226,7 @@ static int fec_enet_mii_probe(struct net
+@@ -2234,7 +2234,7 @@ static int fec_enet_mii_probe(struct net
  	fep->link = 0;
  	fep->full_duplex = 0;
  
@@ -25,7 +25,7 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
  
 --- a/drivers/net/ethernet/realtek/r8169_main.c
 +++ b/drivers/net/ethernet/realtek/r8169_main.c
-@@ -5018,7 +5018,7 @@ static int r8169_mdio_register(struct rt
+@@ -5015,7 +5015,7 @@ static int r8169_mdio_register(struct rt
  		return -EUNATCH;
  	}
  
@@ -36,7 +36,7 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
  
 --- a/drivers/net/usb/asix_devices.c
 +++ b/drivers/net/usb/asix_devices.c
-@@ -700,7 +700,7 @@ static int ax88772_init_phy(struct usbne
+@@ -714,7 +714,7 @@ static int ax88772_init_phy(struct usbne
  	}
  
  	phy_suspend(priv->phydev);
@@ -45,7 +45,7 @@ Signed-off-by: David S. Miller <davem@davemloft.net>
  
  	phy_attached_info(priv->phydev);
  
-@@ -720,7 +720,7 @@ static int ax88772_init_phy(struct usbne
+@@ -734,7 +734,7 @@ static int ax88772_init_phy(struct usbne
  		return -ENODEV;
  	}
  
